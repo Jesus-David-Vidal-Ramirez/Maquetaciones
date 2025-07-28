@@ -1,0 +1,32 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0em 3em;
+  height: 100vh;
+  gap: 5em;
+  flex-wrap: wrap;
+  background: #2980b9;
+  background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);
+  background: linear-gradient(to right, #2c3e50, #2980b9);
+}
+
+.main article :hover {
+  cursor: pointer;
+}
+
+article svg {
+  transition: transform 0.3s ease;
+  padding: 5em;
+}
+
+article:hover svg {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px white);
+}
