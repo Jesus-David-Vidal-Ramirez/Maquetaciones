@@ -2,35 +2,42 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color:black;
 }
 
-main {
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100%;
-  background-color: rgb(255, 253, 253);
+  height: 90vh;
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 5px;
+  padding-left: 100px;
+  /* margin-top: -50px; */
 }
 
 .izquierda {
-  width: 50%;
-  margin-left: 50px;
+  /* width: 60%; */
+  /* margin-right: 80px; */
+  margin-left: 150px;
+  margin-bottom: 110px;
 }
 
 .derecha {
   width: 50%;
-  margin-top: 60px;
+  margin-top: -130px;
 }
 
 .formulario {
-  background-color: white;
-  width: 53%;
+  /* background-color: white; */
+  width: 300px;
   border: 1px solid black;
 }
 
 .formulario h1 {
-  padding: 42px 0px;
+  padding: 20px 0px;
   display: flex;
   justify-content: center;
   font-size: x-large;
@@ -42,24 +49,26 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0em 2.2em;
+  padding: 0em 0.4em;
 }
 
 form input {
   padding: 0.7em;
   margin: 5px;
   font-size: small;
-  background-color: rgb(198, 197, 197);
-  border: 1px solid black;
-  /* color: red; */
+  background-color: rgb(0, 0, 0);
+  border: 1px solid gray;
+  border-radius: 3px;
 }
 
 form .sesion {
-  background-color: hsl(240, 100%, 65%);
+  background-color: #3541AF;
+  border: 1px solid #3541AF;
   text-align: center;
   padding: 0.5em;
   margin-top: 7px;
-  color: white;
+  color: #B2B2B2;
+  font-weight: bold;
 }
 
 .lineas {
@@ -68,18 +77,24 @@ form .sesion {
   margin-top: 15px;
 }
 
+.lineas span {
+  color: #B2B2B2;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: larger;
+}
+
 .lineaIzquierda {
   width: 119px;
   height: 1px;
   margin: 10px;
-  background-color: red;
+  background-color: #262626;
 }
 
 .lineaDerecha {
   width: 119px;
   height: 1px;
   margin: 10px;
-  background-color: red;
+  background-color: #262626;
 }
 
 .links {
@@ -87,7 +102,7 @@ form .sesion {
   flex-direction: column;
   margin-top: 15px;
   margin-bottom: 10px;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
 }
 
@@ -97,35 +112,77 @@ form .sesion {
 }
 
 .registro {
-  width: 53%;
-  background-color: white;
+  width: 300px;
   margin-top: 10px;
-  padding: 22px;
-  border: 1px solid black;
+  padding-top: 22px;
   text-align: center;
 }
 
 .registro a {
   text-decoration: none;
+  color:white;
 }
 
 .facebook {
-  color: rgb(66, 66, 248);
+  color: hwb(207 0% 4%);
+  display: flex;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.facebook p{
+  padding-left: 5px;
 }
 
 .olvidoPassword {
-  font-size: smaller;
-  color: black;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .registro span {
-  color: blue;
+  color: rgb(112, 141, 255);
 }
 
-.descargas {
-  width: 53%;
-  display: flex;
+footer{
+  background-color:black;
+  /* display: flex;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin: 20px 0;
+  flex-direction: row; */
+  position: relative;
+  bottom: 10px;
+  color: #A8A8A8;
+  margin: auto;
+  width: 70%;
+}
+
+footer ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer ul li{
+  list-style: none;
+  font-size: small;
+}
+
+.li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.notLi{
+  cursor: pointer;
+}
+
+.notLi svg{
+  transform: rotate(180deg);
+}
+
+.notLi svg:hover{
+  transform: rotate(180deg);
+  cursor: pointer;
 }
